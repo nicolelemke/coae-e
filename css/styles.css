@@ -866,9 +866,6 @@ img.youtube {
   text-align: center;
   width: 100%;
   margin: 75px auto;
-  padding-top: 75px;
-}
-.s2-tran {
   padding-top: 0;
 }
 .van-content {
@@ -975,6 +972,9 @@ img.youtube {
 }
 .s3-tran {
   padding-bottom: 70px;
+}
+.s2-tran {
+  padding-top: 0;
 }
 @media (min-width: 900px) {
   .s1t-left, .s1t-right  {
