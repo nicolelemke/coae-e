@@ -865,6 +865,10 @@ img.youtube {
   text-align: center;
   width: 100%;
   margin: 75px auto;
+  padding-top: 75px;
+}
+.s2-tran {
+  padding-top: 0;
 }
 .van-content {
   display: inline-flex;
