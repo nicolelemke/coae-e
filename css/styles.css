@@ -992,7 +992,7 @@ img.youtube {
     max-height: 500px;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   .s1t-right div h1 {
     font-size: 36px;
   }
