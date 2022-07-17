@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta name="robots" contents="noindex" />
+
+	<head>
+
+		<meta charset="utf-8">
+		<meta name="format-detection" content="telephone=no">
+
+		<title>Council on Aging of Elkhart County</title>
+
+
+		<!-- Bootstrap -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- CSS -->
+		<link rel="stylesheet" href="css/styles.css" />
+		<!--CSS for Carrie until I merge-->
+		<link rel="stylesheet" href="css/carrie-styles.css" />
+
+		<!-- Adobe Font Link (Effra)-->
+		<link rel="stylesheet" href="https://use.typekit.net/izo5blw.css">
+
+		<!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+
+	</head>
+
+	<body>
+
+		<!-- =========== HEADER =========== -->
+		<header>
+
+			<!--brand logo-->
+			<div class="nav-logo">
+				<img src="images/coae-mainlogo.png" class="" alt="COA Elkhart Logo" title="COA Elkhart Logo" width="150" />
+			</div>
+
+			<!--mobile nav-->
+			<nav class="mobilenav">
+				<div class="hamburger-menu">
+					<input id="menu__toggle" type="checkbox" />
+					<label class="menu__btn" for="menu__toggle">
+						<span></span>
+					</label>
+
+					<ul class="menu__box">
+						<li><a class="menu__item" href="index.html">HOME</a></li>
+						<li class="dropdownlist"><a class="menu__item" onclick="myFunction3()">SERVICES</a>
+							<ul class="dropdown" id="dropdown3">
+								<li>
+									<a class="menu__item" href="services/transportation.html">Transportation</a>
+								</li>
+								<li>
+									<a class="menu__item" href="#target">In Home Care</a>
+								</li>
+								<li>
+									<a class="menu__item" href="#target">Life Enrichment</a>
+								</li>
+								<li>
+									<a class="menu__item" href="#target">Apply for Services</a>
+								</li>
+							</ul>
+						</li>
+						<li class="dropdownlist"><a class="menu__item" onclick="myFunction4()">GET INVOLVED</a>
+							<ul class="dropdown" id="dropdown4">
+								<li>
+									<a class="menu__item" href="#target">Donate</a>
+								</li>
+								<li>
+									<a class="menu__item" href="get-involved/volunteer.html">Volunteer</a>
+								</li>
+								<li>
+									<a class="menu__item" href="#target">Sponsorship</a>
+								</li>
+								<li>
+									<a class="menu__item" href="#target">Join the Team</a>
+								</li>
+								<li>
+									<a class="menu__item" href="#target">Employee Portal</a>
+								</li>
+							</ul>
+						</li>
+						<li><a class="menu__item" href="contact.html">CONTACT</a></li>
+						<li><a class="menu__item" href="about.html">ABOUT</a></li>
+						<li><a class="menu__item" href="#target">BLOG</a></li>
+					</ul>
+				</div>
+			</nav>
+
+			<!--desktop nav-->
+			<nav class="desktopnav">
+				<div class="desktopnav-container">
+					<ul class="desktopnav-list">
+						<li><a class="dt-menu__item" href="index.html">HOME</a></li>
+						<li class="dt-dropdownlist"><a class="dt-menu__item" onclick="myFunction()">SERVICES</a>
+							<ul class="dt-dropdown" id="dropdown1">
+								<div>
+									<li>
+										<a class="dt-menu__item" href="services/transportation.html">Transportation</a>
+									</li>
+									<li>
+										<a class="dt-menu__item" href="#target">In Home Care</a>
+									</li>
+									<li>
+										<a class="dt-menu__item" href="#target">Life Enrichment</a>
+									</li>
+									<li>
+										<a class="dt-menu__item" href="#target">Apply for Services</a>
+									</li>
+								</div>
+							</ul>
+						</li>
+						<li class="dt-dropdownlist"><a class="dt-menu__item" onclick="myFunction2()">GET INVOLVED</a>
+							<ul class="dt-dropdown" id="dropdown2">
+								<div>
+									<li>
+										<a class="dt-menu__item" href="#target">Donate</a>
+									</li>
+									<li>
+										<a class="dt-menu__item" href="get-involved/volunteer.html">Volunteer</a>
+									</li>
+									<li>
+										<a class="dt-menu__item" href="#target">Sponsorship</a>
+									</li>
+									<li>
+										<a class="dt-menu__item" href="#target">Join the Team</a>
+									</li>
+									<li>
+										<a class="dt-menu__item" href="#target">Employee Portal</a>
+									</li>
+								</div>
+							</ul>
+						</li>
+						<li><a class="dt-menu__item" href="contact.html">CONTACT</a></li>
+						<li><a class="dt-menu__item" href="about.html">ABOUT</a></li>
+						<li><a class="dt-menu__item" href="#target">BLOG</a></li>
+					</ul>
+				</div>
+			</nav>
+
+			<!--header right-->
+			<div class="header-right">
+				<div>
+					<a href="tel:2072428814">
+						<?xml version="1.0" encoding="UTF-8"?><svg id="Layer_2" xmlns="http://www.w3.org/2000/svg"
+							viewBox="0 0 28.28 31.11">
+							<g id="Layer_1-2">
+								<path
+									d="M28.24,25.02c-.06-.26-.56-.68-1.5-1.25-.25-.18-.61-.42-1.08-.73-.47-.31-.89-.59-1.27-.85-.38-.26-.74-.51-1.07-.75-.05-.05-.22-.18-.49-.41-.28-.23-.51-.4-.71-.52-.19-.12-.39-.18-.59-.2-.28-.02-.65,.14-1.1,.51-.46,.36-.88,.77-1.27,1.21-.39,.44-.8,.84-1.23,1.21-.43,.37-.77,.54-1.02,.52-.13-.01-.28-.06-.47-.15-.18-.09-.32-.16-.42-.22-.09-.06-.25-.17-.48-.34-.23-.17-.35-.26-.38-.28-1.83-1.23-3.37-2.6-4.63-4.09-1.26-1.5-2.33-3.25-3.23-5.27-.01-.03-.08-.17-.21-.42-.13-.25-.21-.43-.25-.53-.04-.1-.09-.25-.14-.45-.05-.2-.07-.36-.06-.48,.02-.25,.25-.56,.69-.92,.43-.36,.9-.69,1.4-1,.5-.31,.97-.66,1.41-1.04,.44-.39,.67-.72,.69-1,.02-.2-.01-.4-.1-.61-.08-.21-.21-.47-.39-.79-.18-.31-.28-.5-.32-.56-.18-.37-.36-.76-.55-1.18-.19-.42-.4-.89-.62-1.4-.22-.51-.4-.91-.53-1.19-.41-1.02-.73-1.59-.98-1.7-.09-.05-.24-.08-.44-.1-.38-.03-.88,0-1.5,.08-.62,.09-1.12,.19-1.48,.32-.73,.23-1.55,1.03-2.46,2.38C.62,4.04,.14,5.32,.03,6.61,0,6.99,0,7.36,0,7.72c.02,.36,.07,.77,.16,1.23,.09,.46,.16,.8,.22,1.03,.06,.22,.17,.63,.33,1.21,.16,.58,.26,.93,.29,1.07,.37,1.42,.85,2.7,1.43,3.84,.95,1.89,2.3,3.88,4.05,5.96,1.75,2.08,3.47,3.76,5.18,5.02,1.02,.77,2.2,1.46,3.53,2.07,.12,.05,.46,.21,1,.47,.54,.26,.92,.44,1.13,.53,.21,.1,.54,.23,.97,.39,.44,.17,.83,.29,1.19,.37,.35,.08,.72,.14,1.1,.17,1.29,.11,2.63-.13,4.01-.73,1.49-.66,2.41-1.33,2.76-2.01,.19-.34,.37-.81,.57-1.4,.19-.6,.31-1.09,.34-1.47,.02-.2,0-.35-.03-.45h0Z" />
+							</g>
+						</svg>
+					</a>
+				</div>
+				<div>
+					<button class="teal-button nav-call"><a href="#target">DONATE</a></button>
+				</div>
+			</div>
+
+		</header>
+
+		<!-- =========== MAIN CONTENT =========== -->
+		<main class="main-top-space">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-6">
+						<h2 class="text-center office">OUR OFFICE</h2>
+						<div class="d-flex justify-content-center">
+							<img src="images/elkhart-office.png" alt="" title="" width="300"/>
+						</div>
+						<div class="d-flex justify-content-center">
+							<p>131 W Tyler St., Suite 1A <br>Elkhart, IN 46516</p>
+						</div>
+						<div class="d-flex justify-content-center">
+							<h4>OFFICE HOURS</h4>
+						</div>
+						<div class="d-flex justify-content-center">
+							<p>8 AM - 4:30 PM Mon - Fri</p>
+						</div>
+						<div class="d-flex justify-content-center">
+							<p>Closed daily 12 PM - 1 PM for lunch</p>
+						</div>
+						<div class="d-flex justify-content-center">
+							<h4>SERVICE HOURS</h4>
+						</div>
+						<div class="d-flex justify-content-center">
+							<p>6 AM - 6 PM</p>
+						</div>
+						<div class="d-flex justify-content-center">
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2979.8409038908126!2d-85.97369698486554!3d41.68077928571885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8816c2d5675f06c1%3A0x81af6fa07aeb8c8b!2sCouncil%20On%20Aging%20of%20Elkhart%20County!5e0!3m2!1sen!2sus!4v1657473185793!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<h2 class="text-center">CONTACT US</h2>
+						<div class="d-flex justify-content-center">
+							<p class="contact">General inquiries may be submitted by calling our business office at (574)295-1820 during the business hours listed or electronically via the form provided.</p>
+						</div>
+							<!-- Begin Contact Form -->
+						<div class="d-flex justify-content-center">
+							<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfAxb75SIqXzSEzrxNz8Z4Oty_nTdaeKlyKr9Chlz1R4dzNow/viewform?embedded=true" width="640" height="1050" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+
+
+		<!-- =========== FOOTER =========== -->
+		<footer>
+			<section class="footer-01">
+				<img src="images/coae-logo-black.png" alt="COA Elkhart Black Logo" title="COA Elkhart Black Logo">
+			</section>
+
+			<section class="footer-02">
+				<nav class="desktopnav footernav">
+					<div class="desktopnav-container footer-nav">
+						<ul class="desktopnav-list">
+							<li><a class="dt-menu__item" href="index.html">HOME</a></li>
+							<li><a class="dt-menu__item" href="#target">APPLY</a></li>
+							<li><a class="dt-menu__item" href="contact.html">CONTACT</a></li>
+							<li><a class="dt-menu__item" href="#target">CAREERS</a></li>
+							<li><a class="dt-menu__item" href="get-involved/volunteer.html">VOLUNTEER</a></li>
+							<li><a class="dt-menu__item" href="#target">DONATE</a></li>
+						</ul>
+					</div>
+				</nav>
+				<div class="social-nav">
+					<a class="hvr-bob" href="#target"><img src="images/insta-icon.svg" alt="Instagram Icon"
+							title="Instagram Icon"></a>
+					<a class="hvr-bob" href="#target"><img src="images/linkdin-icon.svg" alt="Linkdin Icon"
+							title="Linkdin Icon"></a>
+					<a class="hvr-bob" href="#target"><img class="youtube" src="images/youtube-icon.svg" alt="Youtube Icon"
+							title="Youtube Icon"></a>
+					<a class="hvr-bob" href="#target"><img src="images/fbook-icon.svg" alt="Facebook Icon"
+							title="Facebook Icon"></a>
+				</div>
+				<div class="footer-contact">
+					<p><b>info@elkhartcoa.org</b></p>
+					<br>
+					<p>131 West Tyler St., Suite 1A<br>Elkhart, IN 46516</p>
+				</div>
+				<div class="made-by">
+					<p><i>WEBSITE CREATED BY GATOR INTERACTIVE</i></p>
+				</div>
+			</section>
+
+
+		</footer>
+
+
+		<!-- JavaScript -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script type="text/javascript" src="js/script.js"></script>
+		<script src="js/css3-animate-it.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+	</body>
+</html>
