@@ -1054,6 +1054,9 @@ img.youtube {
   background-size: cover;
   background-repeat: no-repeat;
 }
+.about-row div {
+  min-height: 500px;
+}
 
 @media (max-width: 800px) {
   .about-row .col-sm-6 {
