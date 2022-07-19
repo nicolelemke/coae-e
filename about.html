@@ -34,8 +34,8 @@
 		<header>
 		
 			<!--brand logo-->
-			<div class="nav-logo">
-				<img src="images/coae-mainlogo.png" class="" alt="COA Elkhart Logo" title="COA Elkhart Logo" width="150" />
+			<div class="nav-logo animatedParent animateOnce">
+				<img src="images/coae-mainlogo.png" class="animated delay fadeIn slow" alt="COA Elkhart Logo" title="COA Elkhart Logo" width="150" />
 			</div>
 		
 			<!--mobile nav-->
@@ -92,8 +92,8 @@
 		
 			<!--desktop nav-->
 			<nav class="desktopnav">
-				<div class="desktopnav-container">
-					<ul class="desktopnav-list">
+				<div class="desktopnav-container animatedParent animateOnce">
+					<ul class="desktopnav-list animated delay fadeIn slow">
 						<li><a class="dt-menu__item" href="index.html">HOME</a></li>
 						<li class="dt-dropdownlist"><a class="dt-menu__item" onclick="myFunction()">SERVICES</a>
 							<ul class="dt-dropdown" id="dropdown1">
@@ -142,8 +142,8 @@
 			</nav>
 		
 			<!--header right-->
-			<div class="header-right">
-				<div>
+			<div class="header-right animatedParent animateOnce">
+				<div class="animated delay fadeIn slow">
 					<a href="tel:2072428814">
 						<?xml version="1.0" encoding="UTF-8"?><svg id="Layer_2" xmlns="http://www.w3.org/2000/svg"
 							viewBox="0 0 28.28 31.11">
@@ -154,7 +154,7 @@
 						</svg>
 					</a>
 				</div>
-				<div>
+				<div class="animated delay fadeIn slow">
 					<button class="teal-button nav-call"><a href="#target">DONATE</a></button>
 				</div>
 			</div>
@@ -163,9 +163,24 @@
 
 		<!-- =========== MAIN CONTENT =========== -->
 		<main id="main">
+
+			<section class="animatedParent animateOnce">
+				<div class="about-intro-container animated fadeIn slow">
+					<p class="page-breadcrumb animated fadeIn slow">/ ABOUT COA</p>
+					<div class="about-intro animated fadeIn slow">
+						<img src="images/coae-abrv-white.png" alt="COA white short logo" title="COA white short logo" width="200"/>
+						<h5 class="faded-teal">OUR MISSION AT COA ELKHART</h5>
+						<p class="white">We nurture body, mind, and spirit by helping
+						to overcome physical barriers, enhancing mental
+						acuity, and befriending our clients.</p>
+					</div>
+				</div>
+			</section>
+
+
 			<div class="container-fluid text-center">
-				<div class="row about-row">
-					<div class="col-sm-6 faded-red about-para-container">
+				<div class="row about-row animatedParent animateOnce">
+					<div class="col-sm-6 faded-red about-para-container animated fadeIn slow">
 						<div class="about-para">
 							<div>
 								<h3 class="red">WHAT WE DO</h3>
@@ -174,15 +189,15 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-sm-6 whatwedo-img">
-						<img src="images/coa-hands.jpeg" alt="" title="" width="500" height="300"/>
+					<div class="col-sm-6 whatwedo-img animated fadeIn slow">
+						<img src="images/coa-hands.jpeg" alt="holding hands" title="holding hands" width="500" height="300"/>
 					</div>
 				</div>
-				<div class="row about-row">
-					<div class="col-sm-6 whoweare-img">
-						<img src="images/coa-diversity.jpeg" alt="" title="" width="500" height="300"/>
+				<div class="row about-row animatedParent animateOnce">
+					<div class="col-sm-6 whoweare-img animated fadeIn slow">
+						<img src="images/coa-diversity.jpeg" alt="Diveristy at COA" title="Diversity at COA" width="500" height="300"/>
 					</div>
-					<div class="col-sm-6 faded-yellow about-para-container">
+					<div class="col-sm-6 faded-yellow about-para-container animated fadeIn slow">
 						<div class="about-para">
 							<div>
 								<h3 class="gold">WHO WE ARE</h3>
@@ -197,8 +212,8 @@
 						</div>
 					</div>
 				</div>
-				<div class="row about-row">
-					<div class="col-sm-6 aqua about-para-container">
+				<div class="row about-row animatedParent animateOnce">
+					<div class="col-sm-6 aqua about-para-container animated fadeIn slow">
 						<div class="about-para">
 							<div>
 								<h3 class="teal">WORK WITH US</h3>
@@ -212,13 +227,98 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-sm-6 workwithus-img">
-						<img src="images/coa-computer.jpeg" alt="" title="" width="500" height="300"/>
+					<div class="col-sm-6 workwithus-img animated fadeIn slow">
+						<img src="images/coa-computer.jpeg" alt="Helping with technology" title="Helping with technology" width="500" height="300"/>
 					</div>
 				</div>
 			</div>
 
+			<!--review carousel-->
+
+			<section class="review-carousel-container animatedParent animateOnce">
+				<div id="slider" class="review-carousel animated delay fadeIn slow">
+					<div id="line">
+					</div>
+					<div class="carousel-header">
+						<p>CLIENT TESTIMONIALS</p>
+					</div>
+
+					<ul id="move">
+						<li class="review-slide">
+							<div class="slide-review-text">
+								<div class="review-text-container">
+									<p>
+										A team of smart people who care deeply about services, programming and advocacy for aging well!
+									</p>
+									<h5 class="red">-Fred L</h5>
+								</div>
+							</div>
+						</li>
+				
+						<li class="review-slide">
+							<div class="slide-review-text">
+								<div class="review-text-container">
+									<p>
+										Received excellent help. Staff are truly concerned about giving good help.
+									</p>
+									<h5 class="gold">-Willie G</h5>
+								</div>
+							</div>
+						</li>
+				
+						<li class="review-slide">
+							<div class="slide-review-text">
+								<div class="review-text-container">
+									<p>
+										They help me do my taxes each year. Great group of people and friendly.
+									</p>
+									<h5 class="teal">-Diana P</h5>
+								</div>
+							</div>
+						</li>
+
+						<li class="review-slide">
+							<div class="slide-review-text">
+								<div class="review-text-container">
+									<p>
+										From A to Z for seniors. Very friendly staff. They help with anything and everything you ay need.
+									</p>
+									<h5 class="red">-William K</h5>
+								</div>
+							</div>
+						</li>
+
+						<li class="review-slide">
+							<div class="slide-review-text">
+								<div class="review-text-container">
+									<p>
+										They provide compassionate, knowledgeable guidance to seniors in need.
+									</p>
+									<h5 class="gold">-Racahel S</h5>
+								</div>
+							</div>
+						</li>
+
+						<li class="review-slide">
+							<div class="slide-review-text">
+								<div class="review-text-container">
+									<p>
+										Great organization, advocates for ALL seniors, especially those who need it most.
+									</p>
+									<h5 class="teal">-Pamela L</h5>
+								</div>
+							</div>
+						</li>
+					</ul>
+					<div id="back"><i class="arrow left"></i></div>
+					<div id="forword"><i class="arrow right"></i></div>
+					<div id="dots" class="dot-black">
+					</div>
+				</div>
+			</section>
+
 		</main>
+
 
 		<!-- =========== FOOTER =========== -->
 		<footer>
