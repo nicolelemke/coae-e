@@ -730,7 +730,7 @@ ul li ul.dropdown li a {
 }
 .dt-menu__item {
   display: block;
-  padding: 10px 24px;
+  padding: 12px 22px;
 	letter-spacing: 2px;
   color: black;
   font-weight: 500;
