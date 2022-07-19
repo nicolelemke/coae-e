@@ -1054,8 +1054,8 @@ img.youtube {
   background-size: cover;
   background-repeat: no-repeat;
 }
-.about-row div {
-  min-height: 500px;
+.about-para div {
+   padding: 12% 2%;
 }
 
 @media (max-width: 800px) {
