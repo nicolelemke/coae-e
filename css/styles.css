@@ -712,7 +712,7 @@ ul li ul.dropdown li a {
 	display: none;
 }
 
-@media (min-width: 1300px) {
+@media (min-width: 1320px) {
 	.desktopnav {
 		display: contents;
 	}
