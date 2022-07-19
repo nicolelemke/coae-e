@@ -712,7 +712,7 @@ ul li ul.dropdown li a {
 	display: none;
 }
 
-@media (min-width: 1320px) {
+@media (min-width: 1300px) {
 	.desktopnav {
 		display: contents;
 	}
@@ -730,7 +730,7 @@ ul li ul.dropdown li a {
 }
 .dt-menu__item {
   display: block;
-  padding: 12px 24px;
+  padding: 10px 24px;
 	letter-spacing: 2px;
   color: black;
   font-weight: 500;
