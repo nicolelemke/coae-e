@@ -2,27 +2,33 @@
 function myFunction() {
   var x = document.getElementById("dropdown1");
   var y = document.getElementById("main");
+  var w = document.getElementById("menu-title-3");
   if (x.style.display === "block") {
     x.style.display = "none";
     y.style.position = "inherit";
     y.style.top = "0";
+    w.innerHTML = "SERVICES <i class='arrow down'></i>";
   } else {
     x.style.display = "block";
     y.style.position = "relative";
     y.style.top = "93px";
+    w.innerHTML = "SERVICES <i class='arrow up'></i>";
   }
 }
 function myFunction2() {
   var x = document.getElementById("dropdown2");
   var y = document.getElementById("main");
+  var w = document.getElementById("menu-title-4");
   if (x.style.display === "block") {
     x.style.display = "none";
     y.style.position = "inherit";
     y.style.top = "0";
+    w.innerHTML = "GET INVOLVED <i class='arrow down'></i>";
   } else {
     x.style.display = "block";
     y.style.position = "relative";
     y.style.top = "93px";
+    w.innerHTML = "GET INVOLVED <i class='arrow up'></i>";
   }
 }
 function myFunction3() {
@@ -40,7 +46,7 @@ function myFunction3() {
     y.style.position = "relative";
     y.style.top = "93px";
     w.style.background = "white"
-    w.innerHTML = "SERVICES <i class='arrow up'></i></p>";
+    w.innerHTML = "SERVICES <i class='arrow up'></i>";
   }
 }
 function myFunction4() {
@@ -58,7 +64,7 @@ function myFunction4() {
     y.style.position = "relative";
     y.style.top = "93px";
     w.style.background = "white"
-    w.innerHTML = "GET INVOLVED <i class='arrow up'></i></p>";
+    w.innerHTML = "GET INVOLVED <i class='arrow up'></i>";
   }
 }
 

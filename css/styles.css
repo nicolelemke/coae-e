@@ -236,6 +236,8 @@ button a:hover {
   border-width: 0 3px 3px 0;
   display: inline-block;
   padding: 3px;
+  position: relative;
+  bottom: 2px;
 }
 
 .up {
@@ -556,9 +558,6 @@ ul#move li:nth-child(3) {
   }
 }
 
-@media (min-width: 1300px) {
-}
-
 
 /*================================
         Header
@@ -729,7 +728,7 @@ ul li ul.dropdown li a {
 }
 .dt-menu__item {
   display: block;
-  padding: 12px 22px;
+  padding: 12px 20px;
 	letter-spacing: 2px;
   color: black;
   font-weight: 500;
@@ -781,7 +780,7 @@ ul li ul.dropdown li a {
 		color: #0096a9;
 	}
 	.desktopnav-container {
-    max-width: 870px;
+    max-width: 900px;
     padding: 30px;
 	}
 

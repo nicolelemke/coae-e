@@ -45,13 +45,14 @@
 					<label class="menu__btn" for="menu__toggle">
 						<span></span>
 					</label>
-
+			
 					<ul class="menu__box">
 						<li><a class="menu__item" href="../index.html">HOME</a></li>
-						<li class="dropdownlist"><a class="menu__item" onclick="myFunction3()">SERVICES</a>
+						<li class="dropdownlist"><a class="menu__item" id="menu-title-1" onclick="myFunction3()">SERVICES <i
+									class="arrow down"></i></a>
 							<ul class="dropdown" id="dropdown3">
 								<li>
-									<a class="menu__item" href="../services/transportation.html">Transportation</a>
+									<a class="menu__item" href="transportation.html">Transportation</a>
 								</li>
 								<li>
 									<a class="menu__item" href="#target">In Home Care</a>
@@ -64,13 +65,14 @@
 								</li>
 							</ul>
 						</li>
-						<li class="dropdownlist"><a class="menu__item" onclick="myFunction4()">GET INVOLVED</a>
+						<li class="dropdownlist"><a class="menu__item" id="menu-title-2" onclick="myFunction4()">GET INVOLVED <i
+									class="arrow down"></i></a>
 							<ul class="dropdown" id="dropdown4">
 								<li>
 									<a class="menu__item" href="#target">Donate</a>
 								</li>
 								<li>
-									<a class="menu__item" href="volunteer.html">Volunteer</a>
+									<a class="menu__item" href="../get-involved/volunteer.html">Volunteer</a>
 								</li>
 								<li>
 									<a class="menu__item" href="#target">Sponsorship</a>
@@ -89,17 +91,18 @@
 					</ul>
 				</div>
 			</nav>
-
+			
 			<!--desktop nav-->
 			<nav class="desktopnav">
 				<div class="desktopnav-container">
 					<ul class="desktopnav-list">
 						<li><a class="dt-menu__item" href="../index.html">HOME</a></li>
-						<li class="dt-dropdownlist"><a class="dt-menu__item" onclick="myFunction()">SERVICES</a>
+						<li class="dt-dropdownlist"><a class="dt-menu__item" id="menu-title-3" onclick="myFunction()">SERVICES <i
+									class="arrow down"></i></a>
 							<ul class="dt-dropdown" id="dropdown1">
 								<div>
 									<li>
-										<a class="dt-menu__item" href="../services/transportation.html">Transportation</a>
+										<a class="dt-menu__item" href="transportation.html">Transportation</a>
 									</li>
 									<li>
 										<a class="dt-menu__item" href="#target">In Home Care</a>
@@ -113,14 +116,15 @@
 								</div>
 							</ul>
 						</li>
-						<li class="dt-dropdownlist"><a class="dt-menu__item" onclick="myFunction2()">GET INVOLVED</a>
+						<li class="dt-dropdownlist"><a class="dt-menu__item" id="menu-title-4" onclick="myFunction2()">GET INVOLVED
+								<i class="arrow down"></i></a>
 							<ul class="dt-dropdown" id="dropdown2">
 								<div>
 									<li>
 										<a class="dt-menu__item" href="#target">Donate</a>
 									</li>
 									<li>
-										<a class="dt-menu__item" href="volunteer.html">Volunteer</a>
+										<a class="dt-menu__item" href="../get-involved/volunteer.html">Volunteer</a>
 									</li>
 									<li>
 										<a class="dt-menu__item" href="#target">Sponsorship</a>
@@ -162,7 +166,7 @@
 		</header>
 
 		<!-- =========== MAIN CONTENT =========== -->
-		<main class="main main-top-space main-volunteer">
+		<main class="main main-top-space main-volunteer" id="main">
 			<div class="container v-intro-container">
   			<div class="row column">
     			<div class="col volunteer-intro vi-01">
@@ -271,9 +275,9 @@
 
 		<!-- JavaScript -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-		<script type="text/javascript" src="../js/script.js"></script>
 		<script src="../js/css3-animate-it.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="../js/script.js"></script>
 
 	</body>
 </html>
