@@ -3,39 +3,36 @@
 <meta name="robots" contents="noindex" />
 
 	<head>
-
+	
 		<meta charset="utf-8">
 		<meta name="format-detection" content="telephone=no">
-
+	
 		<title>Council on Aging of Elkhart County</title>
-
-
-		<!-- Bootstrap -->
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-
+	
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-
+	
 		<!-- CSS -->
 		<link rel="stylesheet" href="css/styles.css" />
-		<!--CSS for Carrie until I merge-->
-		<link rel="stylesheet" href="css/carrie-styles.css" />
-
+	
 		<!-- Adobe Font Link (Effra)-->
 		<link rel="stylesheet" href="https://use.typekit.net/izo5blw.css">
-
+	
 		<!-- Favicon -->
-    <link rel="icon" type="image/png" href="images/favicon.png" />
-
+		<link rel="icon" type="image/png" href="images/favicon.png" />
+	
 	</head>
 
-	<body>
+	<body class="contact-body">
 
 		<!-- =========== HEADER =========== -->
 		<header>
 
 			<!--brand logo-->
-			<div class="nav-logo">
-				<img src="images/coae-mainlogo.png" class="" alt="COA Elkhart Logo" title="COA Elkhart Logo" width="150" />
+			<div class="nav-logo animatedParent animateOnce">
+				<a class="menu__item index-link" href="index.html">
+					<img src="images/coae-mainlogo.png" class="animated delay fadeIn slow" alt="COA Elkhart Logo"
+						title="COA Elkhart Logo" width="150" />
+				</a>
 			</div>
 
 			<!--mobile nav-->
@@ -45,7 +42,7 @@
 					<label class="menu__btn" for="menu__toggle">
 						<span></span>
 					</label>
-			
+
 					<ul class="menu__box">
 						<li><a class="menu__item" href="index.html">HOME</a></li>
 						<li class="dropdownlist"><a class="menu__item" id="menu-title-1" onclick="myFunction3()">SERVICES <i
@@ -91,7 +88,7 @@
 					</ul>
 				</div>
 			</nav>
-			
+
 			<!--desktop nav-->
 			<nav class="desktopnav">
 				<div class="desktopnav-container animatedParent animateOnce">
@@ -159,69 +156,152 @@
 					</a>
 				</div>
 				<div>
-					<button class="teal-button nav-call"><a href="#target">DONATE</a></button>
+					<a href="#target"><button class="teal-button nav-call">DONATE</button></a>
 				</div>
 			</div>
 
 		</header>
 
 		<!-- =========== MAIN CONTENT =========== -->
-		<!--
-
-			<div class="popup">
-			<a href="https://us8.list-manage.com/contact-form?u=9e9b8c3f41c54f44bc29aee3e&form_id=9245752b45731e66e8d1ed5aa7437c6e" target="popup"
-				onclick="window.open('https://us8.list-manage.com/contact-form?u=9e9b8c3f41c54f44bc29aee3e&form_id=9245752b45731e66e8d1ed5aa7437c6e','popup','width=600, height=700'); return false;">
-				Open Link in Popup
-			</a>
-			</div>
-		-->
-
-			<style>
-
-			</style>
 
 		<main class="main-top-space" id="main">
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col-sm-6">
-						<h2 class="text-center office">OUR OFFICE</h2>
-						<div class="d-flex justify-content-center">
-							<img src="images/elkhart-office.png" alt="" title="" width="300"/>
-						</div>
-						<div class="d-flex justify-content-center">
-							<p>131 W Tyler St., Suite 1A <br>Elkhart, IN 46516</p>
-						</div>
-						<div class="d-flex justify-content-center">
-							<h4>OFFICE HOURS</h4>
-						</div>
-						<div class="d-flex justify-content-center">
-							<p>8 AM - 4:30 PM Mon - Fri</p>
-						</div>
-						<div class="d-flex justify-content-center">
-							<p>Closed daily 12 PM - 1 PM for lunch</p>
-						</div>
-						<div class="d-flex justify-content-center">
-							<h4>SERVICE HOURS</h4>
-						</div>
-						<div class="d-flex justify-content-center">
-							<p>6 AM - 6 PM</p>
-						</div>
-						<div class="d-flex justify-content-center">
-							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2979.8409038908126!2d-85.97369698486554!3d41.68077928571885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8816c2d5675f06c1%3A0x81af6fa07aeb8c8b!2sCouncil%20On%20Aging%20of%20Elkhart%20County!5e0!3m2!1sen!2sus!4v1657473185793!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-						</div>
+
+			<!-- about section 1-->
+			<section class="contact-s1 animatedParent animateOnce">
+				<div class="contact-text animated delay fadeIn slow">
+					<h2 class="text-center teal">CONTACT US</h2>
+					<p class="contact">General inquiries may be submitted by calling our business office at <span><a class="phone-number teal" href="tel:2072428814">(574)-295-1820</a></span> during the business hours listed or electronically via the form provided.</p>
+				</div>
+							
+			<!-- Begin Contact Form -->
+				<form class="contactform animated delay fadeIn slow" id="test_form" name="test_form" method="POST" action="form.php" onsubmit="return validateForm(this)">
+
+					<div class="firstname input-section">
+						<label for="firstname" class="label_input_wrap">First Name: </label>
+						<input type="text" name="req_firstname" id="firstname" placeholder="..."/>
 					</div>
-					<div class="col-sm-6">
-						<h2 class="text-center">CONTACT US</h2>
-						<div class="d-flex justify-content-center">
-							<p class="contact">General inquiries may be submitted by calling our business office at (574)295-1820 during the business hours listed or electronically via the form provided.</p>
+
+					<div class="lastname input-section">
+						<label for="lastname" class="label_input_wrap">Last Name: </label>
+						<input type="text" name="req_lastname" id="lastname" placeholder="..."/>
+					</div>
+
+					<div class="email input-section">
+						<label for="email" class="label_input_wrap">Email: </label>
+						<input type="email" name="email" id="email" placeholder="..."/>
+					</div>
+
+					<div class="phone input-section">
+						<label for="phone" class="label_input_wrap">Phone: </label>
+						<input type="tel" name="phone" id="phone" placeholder="555-555-5555"/>
+					</div>
+
+					<div class="comments input-section input-comment">
+						<label for="comments" class="label_input_wrap">Comments: </label>
+						<textarea name="comments" id="comments" cols="48" rows="5" placeholder="Type your message here"></textarea>
+					</div>
+
+					<div class="submit">
+						<input type="submit" value="Submit!"/>
+					</div>
+				</form>
+			</section>
+			<!-- contact section 2-->
+			<section class="contact-s2 animatedParent animateOnce">
+				<h2 class="gold animated delay fadeIn slow">OUR OFFICE</h2>
+				<div class="contact-s2-container animated delay fadeIn slow">
+					<div class="contact-office">
+						<div class="office-image">
+							<img src="images/elkhart-office.png" alt="COA of Elkhart County Brick building" title="COA of Elkhart County Building" width="500" />
 						</div>
-							<!-- Begin Contact Form -->
-						<div class="d-flex justify-content-center">
-							<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfAxb75SIqXzSEzrxNz8Z4Oty_nTdaeKlyKr9Chlz1R4dzNow/viewform?embedded=true" width="640" height="1050" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+						<p>131 W Tyler St., Suite 1A <br>Elkhart, IN 46516</p>
+					</div>
+					<div class="contact-map">
+						<div>
+							<iframe
+								src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2979.8409038908126!2d-85.97369698486554!3d41.68077928571885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8816c2d5675f06c1%3A0x81af6fa07aeb8c8b!2sCouncil%20On%20Aging%20of%20Elkhart%20County!5e0!3m2!1sen!2sus!4v1657473185793!5m2!1sen!2sus"
+								height="400" style="border:0;" allowfullscreen="" loading="lazy"
+								referrerpolicy="no-referrer-when-downgrade">
+							</iframe>
 						</div>
 					</div>
 				</div>
-			</div>
+
+			</section>
+
+			<!-- contact section 3-->
+			<section class="contact-s3 animatedParent animateOnce">
+				<div class="about-hours hours1 animated delay fadeIn slow">
+						<h2 class="teal">OFFICE HOURS</h2>
+					<div class="hour-list">
+						<ul class="list-hours">
+							<li>Mon.</li>
+							</li>8:00am - 4:30pm</li>
+						</ul>
+						<ul class="list-hours">
+							<li>Tue.</li>
+							</li>8:00am - 4:30pm</li>
+						</ul>
+						<ul class="list-hours">
+							<li>Wed.</li>
+							</li>8:00am - 4:30pm</li>
+						</ul>
+						<ul class="list-hours">
+							<li>Thur.</li>
+							</li>8:00am - 4:30pm</li>
+						</ul>
+						<ul class="list-hours">
+							<li>Fri.</li>
+							</li>8:00am - 4:30pm</li>
+						</ul>
+						<ul class="list-hours">
+							<li>Sat.</li>
+							</li>Closed</li>
+						</ul>
+						<ul class="list-hours">
+							<li>Sun.</li>
+							</li>Closed</li>
+						</ul>
+					</div>
+					<p class="teal semi-bold">*Closed Daily 12PM - 1PM for Lunch</p>
+				</div>
+
+				<div class="about-hours hours2 animated delay fadeIn slow">
+					<h2 class="teal">SERVICE HOURS</h2>
+					<div class="hour-list">
+						<ul class="list-hours">
+							<li>Mon.</li>
+							</li>6:00am - 6:00pm</li>
+						</ul>
+						<ul class="list-hours">
+							<li>Tue.</li>
+							</li>6:00am - 6:00pm</li>
+						</ul>
+						<ul class="list-hours">
+							<li>Wed.</li>
+							</li>6:00am - 6:00pm</li>
+						</ul>
+						<ul class="list-hours">
+							<li>Thur.</li>
+							</li>6:00am - 6:00pm</li>
+						</ul>
+						<ul class="list-hours">
+							<li>Fri.</li>
+							</li>6:00am - 6:00pm</li>
+						</ul>
+						<ul class="list-hours">
+							<li>Sat.</li>
+							</li>Availability on limited basis</li>
+						</ul>
+						<ul class="list-hours">
+							<li>Sun.</li>
+							</li>Closed</li>
+						</ul>
+					</div>
+				</div>
+
+			</section>
+
 		</main>
 
 
@@ -249,8 +329,6 @@
 							title="Instagram Icon"></a>
 					<a class="hvr-bob" href="#target"><img src="images/linkdin-icon.svg" alt="Linkdin Icon"
 							title="Linkdin Icon"></a>
-					<a class="hvr-bob" href="#target"><img class="youtube" src="images/youtube-icon.svg" alt="Youtube Icon"
-							title="Youtube Icon"></a>
 					<a class="hvr-bob" href="#target"><img src="images/fbook-icon.svg" alt="Facebook Icon"
 							title="Facebook Icon"></a>
 				</div>
@@ -271,7 +349,6 @@
 		<!-- JavaScript -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 		<script src="js/css3-animate-it.js"></script>
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 		<script type="text/javascript" src="js/script.js"></script>
 
 	</body>
