@@ -102,6 +102,9 @@ a:hover {
 	 transition: .6s ease-in-out;
    cursor: pointer;
 }
+a.hvr-teal:hover {
+  color: #0096a9;
+}
 a.hvr-gold:hover {
     color: #f18a21;
 }
@@ -180,7 +183,7 @@ h5 {
 /**Use no class for regular styled button (gold).
 Use color class for different color buttons in "<button></button>"" tag or in "<a></a>" tag **/
 
-button {
+.button {
 	background-color: #f18a21;
 	color: white;
 	border-radius: 2px;
@@ -191,13 +194,13 @@ button {
 	letter-spacing: 2px;
 	transition: .6s ease-in-out;
 }
-button:hover {
+.button:hover {
 	background-color: #000000;
 	color: white;
 	transition: .6s ease-in-out;
   cursor: pointer;
 }
-button a {
+.button {
 	color: white;
 	border-radius: 2px;
 	padding: 12px;
@@ -208,7 +211,7 @@ button a {
 	transition: .6s ease-in-out;
   text-transform: uppercase;
 }
-button a:hover {
+.button a:hover {
 	color: white;
 	transition: .6s ease-in-out;
 }
@@ -535,6 +538,9 @@ ul#move li:nth-child(3) {
   margin-top: 0;
   margin-bottom: 1rem;
 }
+.space-above {
+  margin-top: 15px;
+}
 
 @media (max-width: 800px) {
   .review-text-container p {
@@ -791,7 +797,7 @@ ul li ul.dropdown li a {
     padding: 30px;
 	}
 
-	.dt-dropdown div {
+	.dt-dropdown li {
 		display: inline-flex;
 		text-decoration: none;
 		list-style-type: none;
@@ -800,11 +806,11 @@ ul li ul.dropdown li a {
 		height: 100%;
     align-items: center;
 	}
-	.dt-dropdown div li .dt-menu__item {
+	.dt-dropdown li div .dt-menu__item {
     font-weight: 500;
     letter-spacing: 1px;
 	}
-	.dt-dropdown div li .dt-menu__item:hover {
+	.dt-dropdown li div .dt-menu__item:hover {
 		background-color: transparent;
 	}
 
@@ -825,7 +831,6 @@ ul li ul.dropdown li a {
 	justify-content: space-between;
 }
 .nav-call {
-    padding: 12px 0;
     min-width: 125px;
     width: 125px;
 }
@@ -962,9 +967,7 @@ img.youtube {
   background-color: #fae9e9;
 }
 .learn-more {
-  letter-spacing: 1.2px;
   font-weight: 500;
-  padding: 15px 0 0 0;
 }
 
 /*---Section 3---*/
@@ -980,10 +983,17 @@ img.youtube {
   margin: auto;
   width: 90%;
 }
-.index-vid-cta {
+.index-video-container video {
+  width: 100%;
+}
+video {
+  width: 100%;
+}
+.index-vid-cta{
   width: 90%;
   max-width: 600px;
   padding: 15px;
+  margin: auto;
 }
 .index-vid-cta a {
   font-size: 21px;
@@ -1343,6 +1353,12 @@ img.youtube {
 .volunteer-intro img {
   width: 600px;
 }
+.volunteer-intro .button {
+  width: 300px;
+  padding: 12px 50px;
+  top: 10px;
+  position: relative;
+}
 .column {
   align-items: center;
 }
@@ -1448,6 +1464,7 @@ form input, form textarea {
   background-color: #d4eaeb7a;
   padding: 5px;
   width: 100%;
+  font-size: 16px;
 }
 form .input-section {
   width: 40%;
@@ -1486,7 +1503,7 @@ form .submit {
   border-radius: 3px;
 }
 textarea {
-  font-family:effra, sans-serif;
+  font-family: effra, sans-serif;
 }
 input {
   -webkit-appearance: none;
@@ -1564,7 +1581,8 @@ font-size: 44px;
   flex-wrap: wrap;
   justify-content: space-evenly;
   column-gap: 50px;
-  }
+  padding: 50px 0;
+}
 @media (max-width: 800px) {
     .contactform, .contact-text {
       min-width: 300px;
@@ -1607,6 +1625,10 @@ font-size: 44px;
     }
     .about-hours {
       width: 100%;
+    }
+    .hour-list {
+      max-width: 75%;
+      margin: auto;
     }
 }
 

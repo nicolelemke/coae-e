@@ -3,11 +3,20 @@ function myFunction() {
   var x = document.getElementById("dropdown1");
   var y = document.getElementById("main");
   var w = document.getElementById("menu-title-3");
+  var v = document.getElementById("dropdown2");
+  var k = document.getElementById("menu-title-4");
   if (x.style.display === "block") {
     x.style.display = "none";
     y.style.position = "inherit";
     y.style.top = "0";
     w.innerHTML = "SERVICES <i class='arrow down'></i>";
+  } else if (v.style.display == "block") {
+    x.style.display = "block";
+    y.style.position = "relative";
+    y.style.top = "93px";
+    w.innerHTML = "SERVICES <i class='arrow up'></i>";
+    v.style.display = "none";
+    k.innerHTML = "GET INVOLVED <i class='arrow down'></i>";
   } else {
     x.style.display = "block";
     y.style.position = "relative";
@@ -15,32 +24,55 @@ function myFunction() {
     w.innerHTML = "SERVICES <i class='arrow up'></i>";
   }
 }
+
 function myFunction2() {
   var x = document.getElementById("dropdown2");
   var y = document.getElementById("main");
   var w = document.getElementById("menu-title-4");
+  var v = document.getElementById("dropdown1");
+  var k = document.getElementById("menu-title-3");
   if (x.style.display === "block") {
     x.style.display = "none";
     y.style.position = "inherit";
     y.style.top = "0";
     w.innerHTML = "GET INVOLVED <i class='arrow down'></i>";
-  } else {
+    v.style.display = "none";
+  } else if (v.style.display == "block") {
+  x.style.display = "block";
+  y.style.position = "relative";
+  y.style.top = "93px";
+  w.innerHTML = "GET INVOLVED <i class='arrow up'></i>";
+  v.style.display = "none";
+  k.innerHTML = "SERVICES <i class='arrow down'></i>";
+} else {
     x.style.display = "block";
     y.style.position = "relative";
     y.style.top = "93px";
     w.innerHTML = "GET INVOLVED <i class='arrow up'></i>";
+    v.style.display = "none";
   }
 }
+
 function myFunction3() {
   var x = document.getElementById("dropdown3");
   var y = document.getElementById("main");
   var w = document.getElementById("menu-title-1");
+  var v = document.getElementById("dropdown4");
+  var k = document.getElementById("menu-title-2");
   if (x.style.display === "block") {
     x.style.display = "none";
     y.style.position = "inherit";
     y.style.top = "0";
     w.style.background ="transparent";
     w.innerHTML = "SERVICES <i class='arrow down'></i>";
+  } else if (v.style.display == "block") {
+    x.style.display = "block";
+    y.style.position = "relative";
+    y.style.top = "93px";
+    w.style.background = "white"
+    w.innerHTML = "SERVICES <i class='arrow up'></i>";
+    v.style.display = "none";
+    k.innerHTML = "GET INVOLVED <i class='arrow down'></i>";
   } else {
     x.style.display = "block";
     y.style.position = "relative";
@@ -53,12 +85,22 @@ function myFunction4() {
   var x = document.getElementById("dropdown4");
   var y = document.getElementById("main");
   var w = document.getElementById("menu-title-2");
+  var v = document.getElementById("dropdown3");
+  var k = document.getElementById("menu-title-1");
   if (x.style.display === "block") {
     x.style.display = "none";
     y.style.position = "inherit";
     y.style.top = "0";
     w.style.background = "transparent";
     w.innerHTML = "GET INVOLVED <i class='arrow down'></i>";
+  } else if (v.style.display == "block") {
+    x.style.display = "block";
+    y.style.position = "relative";
+    y.style.top = "93px";
+    w.style.background = "white"
+    w.innerHTML = "GET INVOLVED <i class='arrow up'></i>";
+    v.style.display = "none";
+    k.innerHTML = "SERVICES <i class='arrow down'></i>";
   } else {
     x.style.display = "block";
     y.style.position = "relative";
