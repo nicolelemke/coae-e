@@ -1488,6 +1488,11 @@ form .submit {
 textarea {
   font-family:effra, sans-serif;
 }
+input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
 .iframe {
   max-width: 100%;
 }
