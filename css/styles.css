@@ -1030,6 +1030,7 @@ Calendar
   align-items: center;
   max-width: 500px;
   margin: auto;
+  padding-bottom: 12px;
 }
 .s2-life {
   background-color: #d4eaeb;
@@ -1481,6 +1482,7 @@ video {
   .vi-01 {
     max-width: 90%;
     margin: auto;
+    padding-bottom: 100px;
   }
 }
 @media (max-width: 767px) {
@@ -1489,7 +1491,7 @@ video {
     padding-bottom: 50px;
   }
   .volunteer-subheading {
-    font-size: 40px;
+    font-size: 38px;
   }
 }
 
